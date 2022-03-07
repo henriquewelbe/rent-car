@@ -5,7 +5,6 @@ const cars = require(__dirname + '/car-data.js');
 
 const app = express();
 app.set('view engine', 'ejs'); 
-app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.locals._ = _;
 

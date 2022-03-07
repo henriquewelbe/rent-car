@@ -6,7 +6,7 @@ exports.cars = function(){ return [
             priceTotal: '92.90',
             image: ''
         },
-        {   type: 'Premium',
+        {   type: 'Economy',
             model: 'Nissan Maxima',
             mode: 'manual',
             priceDay: 59.99,
