@@ -1,9 +1,3 @@
-// $('.option').on('click', function(){
-//     $('.type').each(function(item){
-//         console.log(item)
-//     })
-// })
-
 $('select').on('change', function () {
     let optionText = $(this).find('option').filter(':selected').text();
     $('.card').each(function(){

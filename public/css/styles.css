@@ -214,6 +214,8 @@ select::-ms-expand {
   justify-content: flex-start;
   padding-right: 3.59em;
   flex-wrap: wrap;
+  height: 100%;
+  min-height: 80vh;
 }
 
 .card {
