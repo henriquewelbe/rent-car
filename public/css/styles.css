@@ -1,0 +1,363 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    line-height: 1;
+  }
+  
+  @media screen and (min-width:1561px) {
+    body {font-size: 16px;}
+   }
+  
+  a {
+    color: #066fff;
+  }
+  
+  img[src$=".svg"] {
+    max-width: auto;
+  }
+  
+  .overflow {
+    overflow: hidden;
+  }
+  
+  .container {
+    padding: 0 3.59em;
+    max-width: 1560px;
+    width: 100%;
+  }
+  
+  /* NAV */
+  .nav {
+    padding-top: 1.54em;
+  }
+  
+  .nav-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 12.05em;
+  }
+  
+  .terms-and-conditions {
+    border-right: 0.06em solid #e3e6ef;
+    color: #67aee3;
+    font-size: 0.96em;
+    margin-right: 0.77em;
+    padding-right: 0.77em;
+  }
+  
+  .total-price {
+    color: #4d4f5c;
+    font-size: 0.9em;
+    margin-right: 0.96em;
+    text-transform: uppercase;
+  }
+  
+  .total-number {
+    border: 0.06em solid #d7dae2;
+    border-radius: 0.26em;
+    color: #4376b7;
+    font-size: 1.22em;
+    padding: 0.83em 1.28em;
+    text-transform: uppercase;
+  }
+  
+  /* MAIN CONTAINER */
+  .main {
+    border: 0.06em solid #e3e6ef;
+    border-radius: 0.26em;
+    height: 100%;
+    margin-top: 1.28em;
+    padding: 2.92em 3.91em 2.92em 3.91em;
+    position: relative;
+    width: 100vw;
+  }
+  
+  /* HEADING */
+  h1 {
+    color: #4d4f5c;
+    font-size: 1.92em;
+    margin-bottom: 0.51em;
+    text-transform: uppercase;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.82em;
+  }
+  
+  .description--header--left-side {
+    color: #43425d;
+    font-size: 0.96em;
+    width: 100%;
+  }
+  
+  .header--right-side {
+    display: flex;
+    justify-content: end;
+    gap: 1.28em;
+    width: 40%;
+    padding: 0 4em 0 0;
+  }
+  
+  /* DROPDOWN */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: none;
+    border: 2px solid #d7dae2;
+    border-radius: 0.26em;
+    cursor: pointer;
+    font-size: 1.09em;
+    width: 15.13em;
+    padding: 1.03em 3em;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .select {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .select::after {
+    content: url('../images/dropdown-arrow.svg');
+    position: absolute;
+    top: 1/3%;
+    right: 0;
+    padding: 0 1.28em;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  
+  .select::before {
+    content: url('../images/car-icon.svg');
+    position: absolute;
+    top: 1/3%;
+    left: 0;
+    padding: 0 1.28em;
+  }
+  
+  .is--passenger::before {
+    content: url('../images/people-icon.svg');
+    position: absolute;
+    top: 1/3%;
+    left: 0;
+    padding: 0 1.28em;
+  }
+  
+  /* RENTAL DETAILS */
+  .details {
+    display: flex;
+    flex-direction: column;
+    height: 39.17em;
+    justify-content: space-between;
+    position: absolute;
+    top: 9.46em;
+    left: -1.83em;
+  }
+  
+  .detail--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 3.65em;
+    position: relative;
+  }
+
+  .check-details {
+    background-color: #F5F6FA;
+    padding: 2.5em 0.6875em 0.6875em 2.5em;
+    position: absolute;
+    top: -40%;
+    left: 4.75em;
+    font-size: 1.02em;
+    width: 20.625em;
+    z-index: 1;
+  }
+  
+  .hidden {
+    opacity: 0%;
+    pointer-events: none;
+  }
+
+  .check-arrow {
+    background-color: #F5F6FA;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0;
+    right: 3em;
+    transform: rotate(45deg);
+  }
+
+  .details--label {
+    text-align: center;
+    color: #4d4f5c;
+    text-transform: uppercase;
+    font-size: 0.77em;
+  }
+
+  .check-top {
+    margin-bottom: 2.5em;
+  }
+  
+  .check-edit {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .check {
+    align-items: center;
+    background-color: #cadbf2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.64em;
+    width: 2.44em;
+    height: 2.44em;
+  }
+  
+  .check-img {
+    width: 0.85em;
+  }
+  
+  .last-step {
+    font-size: 0.83em;
+    color: #006fff;
+  }
+  
+  .not-checked {
+    background-color: white;
+    border: 1px solid #006fff;
+  }
+  
+  /* CARD */
+  .cards-container {
+    display: flex;
+    gap: 3.08em;
+    justify-content: flex-start;
+    padding-right: 3.59em;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 80vh;
+  }
+  
+  .card {
+    border: 0.06em solid #d8d8d8;
+    border-radius: 0.26em;
+    margin-bottom: 3.08em;
+    max-width: 19.74em;
+    padding: 1.41em;
+    width: 100%;
+    max-height: 27.5em;
+  }
+  
+  .card--top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .type {
+    color: black;
+    font-size: 1.09em;
+    margin-bottom: 0.39em;
+  }
+  
+  .model {
+    color: #43425d;
+    font-size: 0.96em;
+    margin-bottom: 0.25em;
+  }
+  
+  .mode {
+    color: #4d4f5c;
+    font-size: 0.77em;
+    margin-bottom: 0.25em;
+    text-transform: uppercase;
+  }
+  
+  .more-details {
+    font-size: 0.9em;
+  }
+  
+  .car-image {
+    width: 100%;
+  }
+  
+  .bottom--row-1 {
+    align-items: center;
+    color: #4d4f5c;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: space-between;
+    margin-bottom: 0.77em;
+    text-transform: uppercase;
+  }
+  
+  .line {
+    background-color: #e8e9ec;
+    height: 0.06em;
+    width: 10.79em;
+  }
+  
+  .bottom--row-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .price-day {
+    color: #4d4f5c;
+    font-size: 1.09em;
+  }
+  
+  .per-day {
+    color: #4d4f5c;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0.38em 0 1.28em;
+    opacity: 50%;
+  }
+  
+  .price-details {
+    font-size: 0.9em;
+  }
+  
+  .bottom--row-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    background-color: #066fff;
+    border-radius: 0.18em;
+    color: white;
+    display: flex;
+    font-size: 0.77em;
+    justify-content: center;
+    align-items: center;
+    max-width: 10.6em;
+    padding: 0.64em 1.81em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .secondary {
+    background-color: transparent;
+    border: 0.06em solid #d8d8d8;
+    color: #43425d;
+  }
+  
