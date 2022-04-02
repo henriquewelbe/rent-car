@@ -1,12 +1,9 @@
 import React from "react";
-import Option from "./Option";
+import Select from "./Select";
 
 function PassengerCapacity() {
-  return (
-    <select>
-      <Option name="Passenger Capacity" />
-    </select>
-  );
+  const options = ["Passenger Capacity"];
+  return <Select options={options} />;
 }
 
 export default PassengerCapacity;

@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
-import Option from "./Option";
-import $ from "jquery";
+import Select from "./Select";
 
 function VehicleType() {
-  const options = [
+  const vehicleOptions = [
     "Vehicle Type",
     "Economy",
     "Premium",
@@ -16,26 +15,22 @@ function VehicleType() {
     "Sporty"
   ];
 
-  $("select").on("change", function () {
-    const optionText = $(this).find("option").filter(":selected").text();
-    $(".card").each(function () {
+  function handleChange() {
+    const optionText = document.getElementById("select").value;
+    document.querySelectorAll(".card").forEach((card) => {
       if (optionText === "Vehicle Type") {
-        $(".card").show();
-      } else if ($(this).find(".type").text() !== optionText) {
-        $(this).hide();
+        card.style.display = "";
+      } else if (card.querySelector(".type").innerHTML !== optionText) {
+        card.style.display = "none";
       } else {
-        $(this).show();
+        card.style.display = "";
       }
     });
-  });
+  }
 
   return (
     <div className="select">
-      <select>
-        {options.map((option) => (
-          <Option name={option} />
-        ))}
-      </select>
+      <Select options={vehicleOptions} change={handleChange} />
     </div>
   );
 }

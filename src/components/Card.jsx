@@ -4,7 +4,7 @@ import _ from "lodash";
 
 function Card(props) {
   return (
-    <div className={"card" + props.hidden}>
+    <div className={"card"}>
       <div className="card--top">
         <div className="card--top--left">
           <div className="type">{props.type}</div>
